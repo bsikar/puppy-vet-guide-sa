@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puppy Care in San Antonio | First Shots & Low-Cost Vet Guide</title>
+  <meta name="description" content="A simple, step-by-step puppy care guide for San Antonio pet owners: vaccination timeline, best price clinics, free spay/neuter grant, and how-to-book walkthrough.">
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --primary-light: #e0f2fe;
+      --success: #15803d;
+      --success-light: #dcfce7;
+      --danger: #b91c1c;
+      --danger-light: #fee2e2;
+      --warning: #b45309;
+      --warning-light: #fef3c7;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --radius: 12px;
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.04);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+      color: var(--text);
+      background-color: var(--bg);
+      font-size: 18px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0284c7, #075985);
+      color: #ffffff;
+      padding: 2.5rem 1.25rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.1rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.15rem;
+      color: #e0f2fe;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    section {
+      margin-bottom: 2.75rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 1.25rem;
+    }
+
+    /* 1. TIMELINE */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      position: relative;
+    }
+
+    .timeline-item {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+      border-left: 6px solid var(--primary);
+      box-shadow: var(--shadow);
+    }
+
+    .timeline-item.urgent {
+      border-left-color: var(--danger);
+      background: #fffdfd;
+    }
+
+    .timeline-badge {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-item.urgent .timeline-badge {
+      background: var(--danger-light);
+      color: var(--danger);
+    }
+
+    .timeline-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 0.35rem;
+    }
+
+    .timeline-text {
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    .timeline-note-box {
+      margin-top: 1.25rem;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      font-size: 0.98rem;
+    }
+
+    .timeline-note-box strong {
+      color: var(--primary-dark);
+    }
+
+    /* 2. SIDE BY SIDE OPTIONS */
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 720px) {
+      .options-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .option-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      border: 2px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .option-card.highlight {
+      border-color: var(--primary);
+    }
+
+    .price-pill {
+      position: absolute;
+      top: -12px;
+      right: 16px;
+      background: var(--success);
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .option-card h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+
+    .option-meta {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .price-summary {
+      background: var(--bg);
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .option-list {
+      list-style: none;
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+    }
+
+    .option-list li {
+      font-size: 0.98rem;
+      margin-bottom: 0.6rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .option-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: var(--success);
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      text-align: center;
+      background: var(--primary);
+      color: #ffffff;
+      padding: 0.85rem 1.25rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      transition: background 0.15s ease;
+    }
+
+    .btn:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-secondary {
+      background: #334155;
+    }
+
+    .btn-secondary:hover {
+      background: #1e293b;
+    }
+
+    .backup-list {
+      margin-top: 1.5rem;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .backup-list h4 {
+      font-size: 1.05rem;
+      margin-bottom: 0.75rem;
+      color: #334155;
+    }
+
+    .backup-list ul {
+      list-style: none;
+      font-size: 0.95rem;
+    }
+
+    .backup-list li {
+      padding: 0.45rem 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .backup-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* 3. BOOKING WALKTHROUGH & CAROUSEL */
+    .walkthrough-box {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .walkthrough-steps {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .step-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+
+    .carousel-container {
+      position: relative;
+      background: #0f172a;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+
+    .carousel-slide {
+      display: none;
+      text-align: center;
+    }
+
+    .carousel-slide.active {
+      display: block;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .carousel-caption {
+      background: rgba(15, 23, 42, 0.92);
+      color: #ffffff;
+      padding: 0.85rem 1rem;
+      font-size: 0.95rem;
+      text-align: left;
+    }
+
+    .carousel-caption strong {
+      color: #38bdf8;
+    }
+
+    .carousel-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.6rem 1rem;
+      background: #1e293b;
+      color: #fff;
+    }
+
+    .carousel-btn {
+      background: #334155;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 0.9rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .carousel-btn:hover {
+      background: var(--primary);
+    }
+
+    .carousel-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #64748b;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background: var(--primary);
+    }
+
+    .gif-container {
+      margin-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1.25rem;
+    }
+
+    .gif-container h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      color: #0f172a;
+    }
+
+    .gif-box {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .gif-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* 4. PROOF OF RESIDENCY */
+    .residency-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      border-left: 6px solid var(--warning);
+      border-top: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .residency-card h3 {
+      font-size: 1.3rem;
+      color: #854d0e;
+      margin-bottom: 0.75rem;
+    }
+
+    .residency-list {
+      margin: 1rem 0;
+      padding-left: 1.25rem;
+    }
+
+    .residency-list li {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .alert-banner {
+      background: var(--danger-light);
+      border-left: 4px solid var(--danger);
+      padding: 0.85rem 1rem;
+      border-radius: 6px;
+      color: #7f1d1d;
+      font-size: 0.95rem;
+      margin-top: 1rem;
+    }
+
+    /* 5. INSURANCE CARD */
+    .insurance-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .insurance-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.6rem;
+      color: #0f172a;
+    }
+
+    .insurance-card p {
+      font-size: 1.05rem;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+
+    /* 6. LINKS SECTION */
+    .links-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    @media (min-width: 600px) {
+      .links-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .link-item {
+      display: block;
+      background: var(--card-bg);
+      padding: 1rem 1.15rem;
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--primary-dark);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      font-weight: 600;
+      transition: all 0.15s ease;
+    }
+
+    .link-item span {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: normal;
+      margin-top: 0.2rem;
+    }
+
+    .link-item:hover {
+      border-color: var(--primary);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      background: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Puppy Care in San Antonio</h1>
+    <p>Essential vaccination schedule, best price clinic options, and how to get free spay/neuter in town.</p>
+  </header>
+
+  <main>
+
+    <!-- 1. TIMELINE AT THE VERY TOP -->
+    <section id="timeline">
+      <h2>📅 After You Get Your Puppy, Do This</h2>
+      <p class="section-desc">Follow these step-by-step dates. Do not wait for a full-year plan; focus only on what to do next.</p>
+
+      <div class="timeline">
+        <div class="timeline-item urgent">
+          <span class="timeline-badge">Day 1</span>
+          <h3 class="timeline-title">The Day the Puppy Comes Home</h3>
+          <p class="timeline-text">
+            <strong>Book your first vaccine visit immediately online.</strong> Appointment slots at low-cost clinics fill quickly. Check Option A below to grab a weekday slot, or pick an Option B weekend pop-up date as your backup.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-badge">Weeks 1 – 2</span>
+          <h3 class="timeline-title">First Clinic Visit (Booster + Dewormer)</h3>
+          <p class="timeline-text">
+            Get your puppy’s initial DAPP core booster and deworming. Typical out-of-pocket cost is about <strong>$51 total</strong> (including the $16.50 online booking fee). Bring any prior paperwork or breeder records.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-badge">Every 3 – 4 Weeks</span>
+          <h3 class="timeline-title">Booster Rounds Until ~16 Weeks Old</h3>
+          <p class="timeline-text">
+            Puppies require sequential booster rounds of the DAPP vaccine every 3 to 4 weeks until their immune system matures around 16 weeks of age.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-badge">Around 16 Weeks</span>
+          <h3 class="timeline-title">Final Puppy Round + First Rabies Shot</h3>
+          <p class="timeline-text">
+            <strong>Texas state law requires a rabies shot by 16 weeks</strong> (permitted from 12 weeks). This visit costs around <strong>$50 total</strong>. You can microchip your puppy at this visit ($35) or wait until surgery day.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-badge">Monthly Routine</span>
+          <h3 class="timeline-title">Heartworm &amp; Flea Prevention (Never Skip)</h3>
+          <p class="timeline-text">
+            San Antonio is a severe heartworm transmission region due to year-round mosquitoes. Administer prevention monthly without missing a dose. You can purchase prevention directly from the clinic once their veterinarian has examined the pup.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-badge">5 – 6 Months</span>
+          <h3 class="timeline-title">Spay / Neuter Surgery (100% Free with City Grant)</h3>
+          <p class="timeline-text">
+            Surgery is completely free for owners living in qualifying San Antonio city ZIP codes through the city grant. Slots release once per month on a Monday at 9:00 AM. Book one month ahead and bring your physical proof of residency.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-badge">1 Year Old</span>
+          <h3 class="timeline-title">Adult Boosters</h3>
+          <p class="timeline-text">
+            Final puppy transition booster. After this visit, core rabies and DA2PP shots repeat every 1 to 3 years.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-note-box">
+        <p><strong>💡 Puppy Age Window &amp; Free City Events:</strong> Puppies arriving at 2 to 3 months sit between fixed age brackets; ask clinic staff to tailor the package to prior shots. Also check for <strong>City of San Antonio Animal Care Services (ACS) free vaccine clinics</strong> (held at Paul Jolly Center, Garza Park, and Monterrey Park on Saturdays in November; first-come, proof of residency required).</p>
+        <p style="margin-top:0.4rem;"><strong>🐶 Small Dog Note:</strong> Vaccines are priced flat regardless of pet size. Spay/neuter surgery uses weight tiers, and a small dog (2–20 lbs) sits in the cheapest tier ($98–$104 regular, or 100% free with the city grant). Puppies must weigh at least 2 lbs and be 8+ weeks old for surgery.</p>
+      </div>
+    </section>
+
+    <!-- 2. TWO WAYS TO GET SHOTS -->
+    <section id="options">
+      <h2>💉 Two Ways to Get the Shots</h2>
+      <p class="section-desc">Choose between the lowest overall price (appointment required) or the best walk-in option (no appointment).</p>
+
+      <div class="options-grid">
+        <!-- Option A -->
+        <div class="option-card highlight">
+          <div class="price-pill">Best Price Overall</div>
+          <h3>San Antonio Humane Society</h3>
+          <div class="option-meta">
+            Leeu Naylor Medical Building<br>
+            4804 Fredericksburg Rd, San Antonio, TX 78229<br>
+            Mon – Fri: 10:00 AM – 2:00 PM (By Appt Only)
+          </div>
+          <div class="price-summary">$40 – $55 typical visit</div>
+          <ul class="option-list">
+            <li><strong>Puppy Booster Package:</strong> $34.50 (DAPP + dewormer)</li>
+            <li><strong>First-Visit Package:</strong> $40.00 (adds nail trim + fecal test)</li>
+            <li><strong>Individual Vaccines:</strong> DAPP ~$21, Rabies ~$12, Bordetella ~$13.50</li>
+            <li><strong>$16.50 booking fee</strong> paid online, credited directly to your visit bill</li>
+            <li><strong>Free Spay/Neuter Grant:</strong> 100% free surgery for qualifying city ZIP codes</li>
+          </ul>
+          <a href="https://sahumane.as.me/LeeuNaylorVaxClinic" class="btn" target="_blank" rel="noopener">Book SAHS Online ➔</a>
+        </div>
+
+        <!-- Option B -->
+        <div class="option-card">
+          <div class="price-pill">Best Walk-In Price</div>
+          <h3>Low Cost Pet Vax Clinics</h3>
+          <div class="option-meta">
+            Rotating Weekend Pop-Up Clinics<br>
+            Retail parking lots across San Antonio<br>
+            Saturdays &amp; Sundays (No Appointment Needed)
+          </div>
+          <div class="price-summary">$45 – $70 per age tier</div>
+          <ul class="option-list">
+            <li><strong>6 – 8 Weeks Old:</strong> $45 (DHPP + dewormer + heartworm start)</li>
+            <li><strong>10 – 12 Weeks Old:</strong> $65 (DHPPL + Bordetella + dewormer + HW)</li>
+            <li><strong>3 – 4 Months Old:</strong> $70 (DHPPL booster + 1-yr rabies)</li>
+            <li><strong>Add-ons:</strong> Rabies alone $10, Microchip $35</li>
+            <li>Cash or card accepted; digital shot records emailed immediately</li>
+            <li><em>Note: Shots only; does not provide spay/neuter surgery</em></li>
+          </ul>
+          <a href="https://lowcostpetvaccinations.net/vax-clinics-san-antonio/" class="btn btn-secondary" target="_blank" rel="noopener">Check Weekend Schedule ➔</a>
+        </div>
+      </div>
+
+      <!-- Backup List -->
+      <div class="backup-list">
+        <h4>Other Weekday &amp; Backup Options in San Antonio</h4>
+        <ul>
+          <li><strong>Pet Vaccination Clinic:</strong> 1010 SW Military Dr • (210) 923-5721 • Mon–Fri 9:00 AM – 2:30 PM • <a href="https://petvacc.com" target="_blank" rel="noopener">petvacc.com</a></li>
+          <li><strong>SNAP Spay/Neuter &amp; Wellness (Brooks):</strong> 8034 City Base Landing • (210) 673-7722 • Mon–Thu 7:15 AM – 5:00 PM • <a href="https://snapus.org" target="_blank" rel="noopener">snapus.org</a></li>
+          <li><strong>Marbach Road Animal Hospital:</strong> 7508 Marbach Rd • (210) 673-8020 • Mon–Fri 8:00 AM – 5:30 PM, Sat 8:00 AM – 12:00 PM</li>
+          <li><strong>Vetco at Petco:</strong> 3143 SE Military Dr &amp; 1211 Austin Hwy • Weekend affordable vaccine clinic hours</li>
+          <li><strong>VCA Animal Hospitals:</strong> Free initial physical exam coupon available online for new puppy owners (covers doctor exam only; shots and meds extra) • <a href="https://vcahospitals.com" target="_blank" rel="noopener">vcahospitals.com</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. HOW TO BOOK WALKTHROUGH -->
+    <section id="walkthrough">
+      <h2>📱 How to Book SAHS (Step-by-Step)</h2>
+      <p class="section-desc">Follow this visual click path to secure your appointment without getting confused by surgical forms.</p>
+
+      <div class="walkthrough-box">
+        <div class="walkthrough-steps">
+          <p><span class="step-badge">1</span> Open the official scheduling portal: <a href="https://sahumane.as.me/LeeuNaylorVaxClinic" target="_blank" rel="noopener">sahumane.as.me/LeeuNaylorVaxClinic</a>.</p>
+          <p><span class="step-badge">2</span> Scroll past the top categories to the bottom list labeled <strong>"Select Appointment"</strong>.</p>
+          <p><span class="step-badge">3</span> Select <strong>"Female Dog-VAX/PREV (NOT S/N SURGERY)"</strong> or <strong>"Male Dog-VAX/PREV"</strong> ($16.50 fee). Do not choose a surgery option for shots.</p>
+          <p><span class="step-badge">4</span> Tap <strong>Book</strong>. The monthly calendar opens with available days highlighted in blue.</p>
+          <p><span class="step-badge">5</span> Tap an open day to view available 15-minute time slots on the right, pick your time, and complete checkout.</p>
+        </div>
+
+        <!-- Carousel -->
+        <div class="carousel-container" aria-label="Step by step booking screenshots">
+          <div class="carousel-slide active">
+            <img src="assets/01-sahs-vaxclinic-page.png" alt="San Antonio Humane Society vaccine clinic official page showing Leeu Naylor building hours and appointment-only requirements">
+            <div class="carousel-caption"><strong>Step 1:</strong> The SAHS vaccine clinic page confirms hours (Mon–Fri 10am–2pm) and the strict appointment requirement.</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/02-acuity-booking-top.png" alt="Top of the Acuity online booking scheduler showing calendar categories">
+            <div class="carousel-caption"><strong>Step 2:</strong> Top of Acuity scheduling page. Scroll past the top boxes to the bottom list.</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/03-acuity-select-appointment.png" alt="Select Appointment list showing Female Dog-VAX/PREV selected for $16.50">
+            <div class="carousel-caption"><strong>Step 3:</strong> Select 'Female Dog-VAX/PREV' or 'Male Dog-VAX/PREV' ($16.50), then tap Book.</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/04-acuity-calendar-view.png" alt="November calendar view showing clickable open days in blue and fully booked days grayed out">
+            <div class="carousel-caption"><strong>Step 4:</strong> The calendar displays open dates in blue. Grayed days are fully booked.</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/05-acuity-times-selected.png" alt="Wednesday Nov 11 selected with available 15-minute appointment times on the right">
+            <div class="carousel-caption"><strong>Step 5:</strong> Tap a date to see open 15-minute windows, select your time, and pay the $16.50 deposit.</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/06-lowcostpetvax-schedule.png" alt="Low Cost Pet Vax schedule page showing weekend popup parking lot locations in San Antonio">
+            <div class="carousel-caption"><strong>Walk-In Backup:</strong> Low Cost Pet Vax weekend pop-up clinic locations across San Antonio.</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/07-sahs-spay-neuter-grant.png" alt="SAHS spay and neuter grant page showing promo code ZIPFY2026 and residency proof requirements">
+            <div class="carousel-caption"><strong>Free Surgery Grant:</strong> SAHS Spay/Neuter page with grant code ZIPFY2026 and proof of residency rules.</div>
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="prevBtn" aria-label="Previous image">◀ Prev</button>
+            <div class="carousel-dots" id="dotsContainer"></div>
+            <button class="carousel-btn" id="nextBtn" aria-label="Next image">Next ▶</button>
+          </div>
+        </div>
+
+        <!-- Animated GIF Walkthrough -->
+        <div class="gif-container">
+          <h4>🎬 15-Second Booking Click Path (Animation)</h4>
+          <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+            Watch the exact mouse clicks from selecting the appointment service to locking in your calendar slot:
+          </p>
+          <div class="gif-box">
+            <img src="assets/booking-walkthrough.gif" alt="Animated walkthrough demonstrating selecting Female Dog-VAX, clicking Book, choosing Wednesday November 11, and picking an 11:15 AM slot">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROOF OF RESIDENCY -->
+    <section id="residency">
+      <h2>📄 Proof of Residency (For Free Surgery)</h2>
+      <div class="residency-card">
+        <h3>Mandatory Rules to Receive Free Spay / Neuter Grant</h3>
+        <p>The City of San Antonio grant covers 100% of surgery costs for residents in qualifying city ZIP codes. To claim this grant, you must comply with strict check-in proof rules:</p>
+        
+        <ul class="residency-list">
+          <li><strong>Eligible Documents:</strong> A valid Texas Driver's License OR a current Utility Bill (CPS Energy electric or SAWS water bill).</li>
+          <li><strong>Matching Name:</strong> The name on the document must exactly match the name on the appointment booking.</li>
+          <li><strong>Physical Printout Required:</strong> Bring a <strong>physical, printed paper copy on surgery day</strong> at drop-off. You cannot upload it online beforehand or display it on a phone screen.</li>
+          <li><strong>City Boundary Check:</strong> You must live within official <strong>San Antonio city limits</strong> in an eligible ZIP code. Independent enclave cities (such as Leon Valley, Helotes, Castle Hills, Alamo Heights) do not qualify. Verify your address with the official <a href="https://maps.bexar.org/community/" target="_blank" rel="noopener">Bexar County City Limits Checker</a>.</li>
+        </ul>
+
+        <div class="alert-banner">
+          <strong>⚠️ Failure to Bring Physical Proof:</strong> If you do not have an approved physical copy at morning check-in, the grant will be voided and you will be charged the standard surgery fee ($98 for male neuter, $104 for female spay) that day.
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. INSURANCE NOTE -->
+    <section id="insurance">
+      <h2>🛡️ Pet Insurance Note</h2>
+      <div class="insurance-card">
+        <h3>Does Pet Insurance Make Low-Cost Clinics Cheaper?</h3>
+        <p>
+          <strong>No. Pet insurance does not discount or lower low-cost clinic prices.</strong> Standard pet insurance policies only cover unexpected accidents and illnesses, completely excluding routine preventive care like puppy shots, deworming, and low-cost checkups.
+        </p>
+        <p>
+          Optional "wellness plans" sold by insurers merely reimburse an annual allowance roughly equal to what you pay in monthly fees. If you plan to get accident/illness insurance, enroll your puppy the day they come home—policies enforce a 14-day waiting period for illness and permanently exclude any condition noted on a vet record before enrollment.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6. OFFICIAL LINKS -->
+    <section id="links">
+      <h2>🔗 Official Links &amp; Resources</h2>
+      <p class="section-desc">Direct links to verified city programs, scheduling portals, and pricing schedules.</p>
+
+      <div class="links-grid">
+        <a href="https://sahumane.org/vaxclinic/" class="link-item" target="_blank" rel="noopener">
+          SAHS Vaccine Clinic Page
+          <span>Hours, pricing packages, and clinic requirements</span>
+        </a>
+
+        <a href="https://sahumane.as.me/LeeuNaylorVaxClinic" class="link-item" target="_blank" rel="noopener">
+          SAHS Acuity Booking Portal
+          <span>Direct appointment scheduling calendar</span>
+        </a>
+
+        <a href="https://sahumane.org/spay-neuter/" class="link-item" target="_blank" rel="noopener">
+          SAHS Spay &amp; Neuter Grant Info
+          <span>Qualifying ZIP code list &amp; monthly booking releases</span>
+        </a>
+
+        <a href="https://sahumane.as.me/FredZipCode" class="link-item" target="_blank" rel="noopener">
+          Free Surgery Booking (Code: ZIPFY2026)
+          <span>Official grant reservation link</span>
+        </a>
+
+        <a href="https://maps.bexar.org/community/" class="link-item" target="_blank" rel="noopener">
+          Bexar County City Limits Checker
+          <span>Verify your address qualifies for San Antonio city grants</span>
+        </a>
+
+        <a href="https://lowcostpetvaccinations.net/vax-clinics-san-antonio/" class="link-item" target="_blank" rel="noopener">
+          Low Cost Pet Vax Weekend Schedule
+          <span>Weekly rotating parking lot clinic dates and locations</span>
+        </a>
+
+        <a href="https://sahumane.org/wp-content/uploads/2026/01/Vax-Clinic-Form-2026-English.pdf" class="link-item" target="_blank" rel="noopener">
+          SAHS 2026 Vaccine Price Form (PDF)
+          <span>Official clinic itemized service pricing sheet</span>
+        </a>
+
+        <a href="https://www.sa.gov/Directory/Departments/ACS/" class="link-item" target="_blank" rel="noopener">
+          San Antonio Animal Care Services (ACS)
+          <span>Free community pet vaccination and microchip events</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Puppy Care in San Antonio • Independent, non-commercial community resource guide.</p>
+    <p style="margin-top:0.4rem; font-size:0.82rem;">Prices, grant codes, and schedules verified November 2026. Always confirm live slots with clinic providers.</p>
+  </footer>
+
+  <script>
+    // Carousel script
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dotsContainer = document.getElementById('dotsContainer');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentIndex = 0;
+
+    // Create indicator dots
+    slides.forEach((_, idx) => {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      if (idx === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToSlide(idx));
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll('.dot');
+
+    function updateCarousel() {
+      slides.forEach((s, idx) => {
+        s.classList.toggle('active', idx === currentIndex);
+      });
+      dots.forEach((d, idx) => {
+        d.classList.toggle('active', idx === currentIndex);
+      });
+    }
+
+    function goToSlide(idx) {
+      currentIndex = idx;
+      updateCarousel();
+    }
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+      updateCarousel();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+      updateCarousel();
+    });
+
+    // Touch swipe support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    const carouselEl = document.querySelector('.carousel-container');
+
+    carouselEl.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    carouselEl.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    }, { passive: true });
+
+    function handleSwipe() {
+      if (touchEndX < touchStartX - 40) {
+        // swipe left -> next
+        nextBtn.click();
+      }
+      if (touchEndX > touchStartX + 40) {
+        // swipe right -> prev
+        prevBtn.click();
+      }
+    }
+  </script>
+</body>
+</html>
